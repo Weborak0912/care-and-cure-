@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Health Guide — Dr. Amit Soni</title><meta name="description" content="Dr. Amit Soni — family physician and diabetes care in Nipania, Indore. OPD, ECG, blood tests, nebulization, day care and emergency home visits.">
+<link rel="stylesheet" href="styles.css"></head><body>
+<div class="top"><span>📍 214, Nipania Main Rd, Goyal Avenue, Nipania, Indore</span><span>Emergency home visits available · <b>088002 48741</b></span></div>
+<header><a href="index.html" class="logo"><i>+</i><div>Dr. Amit Soni<small>FAMILY PHYSICIAN · DIABETES CARE</small></div></a>
+<nav><a href="index.html#services">Services</a><a href="index.html#doctor">Doctor</a><a href="conditions.html">Health Guide</a><a href="index.html#timings">Timings</a><a href="index.html#contact">Contact</a></nav>
+<a href="index.html#book" class="btn hbtn">Book Appointment</a></header>
+
+<section class="ptop"><a class="back" href="index.html">← Back to home</a><p class="tag">HEALTH GUIDE</p><h1>Common conditions<br>explained simply.</h1></section>
+<section class="sec" style="padding-top:30px"><div class="cgrid" id="list"></div></section>
+<div class="disc">General health information for awareness only. It is not a diagnosis or a substitute for medical advice. Please consult a doctor about your symptoms.</div><footer><div><b>Dr. Amit Soni</b><br>214, Nipania Main Rd, Amrit Palace Colony, Sector B,<br>Goyal Avenue, Nipania, Indore, MP 452010</div>
+<div>Phone: 088002 48741<br>Mon–Sat 10 am–2 pm, 6–9 pm · Sun 6–8 pm</div>
+<div>© 2026 Dr. Amit Soni<br>Website concept by Webora K</div></footer>
+<a class="wa" href="https://wa.me/918800248741" target="_blank" rel="noopener">WhatsApp</a>
+<script src="data.js"></script>
+<script>document.getElementById("list").innerHTML=CONDITIONS.map(function(c){return '<a class="cc" href="condition.html?d='+c.s+'"><small>'+c.t.toUpperCase()+'</small><h3>'+c.n+'</h3><p>'+c.d.split(". ")[0].replace(/\.$/,"")+'.</p><em>Read more →</em></a>'}).join("");</script></body></html>

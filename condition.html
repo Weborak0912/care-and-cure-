@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Condition — Dr. Amit Soni</title><meta name="description" content="Dr. Amit Soni — family physician and diabetes care in Nipania, Indore. OPD, ECG, blood tests, nebulization, day care and emergency home visits.">
+<link rel="stylesheet" href="styles.css"></head><body>
+<div class="top"><span>📍 214, Nipania Main Rd, Goyal Avenue, Nipania, Indore</span><span>Emergency home visits available · <b>088002 48741</b></span></div>
+<header><a href="index.html" class="logo"><i>+</i><div>Dr. Amit Soni<small>FAMILY PHYSICIAN · DIABETES CARE</small></div></a>
+<nav><a href="index.html#services">Services</a><a href="index.html#doctor">Doctor</a><a href="conditions.html">Health Guide</a><a href="index.html#timings">Timings</a><a href="index.html#contact">Contact</a></nav>
+<a href="index.html#book" class="btn hbtn">Book Appointment</a></header>
+
+<section class="ptop"><a class="back" href="conditions.html">← All conditions</a><p class="tag" id="tag"></p><h1 id="title"></h1></section>
+<section class="detail" id="detail"></section>
+<div class="disc">General health information for awareness only. It is not a diagnosis or a substitute for medical advice. Please consult a doctor about your symptoms.</div><footer><div><b>Dr. Amit Soni</b><br>214, Nipania Main Rd, Amrit Palace Colony, Sector B,<br>Goyal Avenue, Nipania, Indore, MP 452010</div>
+<div>Phone: 088002 48741<br>Mon–Sat 10 am–2 pm, 6–9 pm · Sun 6–8 pm</div>
+<div>© 2026 Dr. Amit Soni<br>Website concept by Webora K</div></footer>
+<a class="wa" href="https://wa.me/918800248741" target="_blank" rel="noopener">WhatsApp</a>
+<script src="data.js"></script>
+<script>
+var q=new URLSearchParams(location.search).get("d"),c=CONDITIONS.filter(function(x){return x.s===q})[0]||CONDITIONS[0];
+document.title=c.n+" — Dr. Amit Soni";document.getElementById("tag").textContent=c.t.toUpperCase();document.getElementById("title").textContent=c.n;
+var li=function(a){return "<ul>"+a.map(function(x){return "<li>"+x+"</li>"}).join("")+"</ul>"};
+document.getElementById("detail").innerHTML='<div><h3>Overview</h3><p>'+c.d+'</p><h3>Common symptoms</h3>'+li(c.sy)+'<h3>Causes</h3><p>'+c.c+'</p><h3>When to see a doctor</h3><p>'+c.w+'</p><h3>Prevention &amp; care</h3>'+li(c.p)+'</div><aside class="side"><h3>Need advice?</h3><p>Book a consultation with Dr. Amit Soni to discuss your symptoms.</p><a class="btn" style="width:100%;justify-content:center" href="index.html#book">Book Appointment →</a><a class="btn o" style="width:100%;justify-content:center;margin-top:10px" href="tel:08800248741">Call 088002 48741</a></aside>';
+</script></body></html>
